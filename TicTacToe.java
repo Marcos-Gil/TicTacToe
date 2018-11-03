@@ -10,7 +10,7 @@
  * 
  * Using cmd.exe (windows) or terminal (mac)
  * Compilation: javac TicTacToe.java
- * Usage      : TicTacToe
+ * Usage      : java TicTacToe
  *
  */
 
