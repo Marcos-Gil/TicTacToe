@@ -15,7 +15,7 @@ Launching instructions:
 -----------------------
 
 1. Open terminal and traverse to folder where TicTacToe.java is located
-2. Compile & run LlamaCalculator.java then follow the instructions provided to play
+2. Compile & run TicTacToe.java then follow the instructions provided to play
 
 Left To Do:
 -----------
