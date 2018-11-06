@@ -125,7 +125,8 @@ public class TicTacToe{
     Scanner userInput = new Scanner(System.in);
     boolean validInput = false;
     int userIntInput = -1;
-
+  
+    // Making sure user can only enter integers
     while (!validInput){
       try {
         System.out.println("It is now your turn. Please enter a number from 1-9 for your move on the board. ");
