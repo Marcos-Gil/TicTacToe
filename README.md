@@ -20,5 +20,5 @@ Launching instructions:
 Left To Do:
 -----------
 - add ability to play multiple games and keep track of user and computers total score
-- sanitize input so user can only enter digits
+- ~~sanitize input so user can only enter digits~~ Complete
 - add logic to the moves the compuuter makes instead of being entirely randomized
