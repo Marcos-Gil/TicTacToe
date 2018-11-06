@@ -16,6 +16,7 @@
 
 import java.util.Scanner;
 import java.util.Random;
+import java.util.InputMismatchException;
 
 public class TicTacToe{
   
@@ -122,8 +123,19 @@ public class TicTacToe{
   public static String getPosition(){
 
     Scanner userInput = new Scanner(System.in);
-    System.out.println("It is now your turn. Please enter a number from 1-9 for your move on the board. ");
-    int userIntInput = userInput.nextInt();
+    boolean validInput = false;
+    int userIntInput = -1;
+
+    while (!validInput){
+      try {
+        System.out.println("It is now your turn. Please enter a number from 1-9 for your move on the board. ");
+        userIntInput = userInput.nextInt();
+        validInput = true;
+      } catch(InputMismatchException e) {
+        System.out.println("Only integers are accepted. Please input a valid position.");
+        userInput.nextLine();
+      }
+    }
 
     while (userIntInput > 9 || userIntInput < 1){
 
